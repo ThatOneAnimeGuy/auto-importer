@@ -1,0 +1,21 @@
+{
+    "run_forever": true,
+    "run_every_X_hours": 24,
+    "debug": false,
+    "seiso": {
+        "username": "",
+        "password": ""
+    },
+    "patreon": {
+        "email": "",
+        "password": ""
+    },
+    "fantia": {
+        "email": "",
+        "password": "",
+        "session_ids": []
+    },
+    "fanbox": {
+        "session_ids": []
+    }
+}
