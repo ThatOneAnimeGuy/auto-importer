@@ -23,7 +23,7 @@ Once you are in this directory, run `pip3.exe install -r requirements.txt` (remo
 
 # Config
 
-1. Open the config.json file included in this directory in some sort of text editor (notepad works best).
+1. Open the `config.json` file included in this directory in some sort of text editor (notepad works best).
 2. Fill in all the information that you can for usernames/emails and passwords. If you have session ids that you want to manually input, you can add them to the lists under the section for each website.
     a. For example, if I had some extra Fantia sessions I wanted to use I could add them to the session_ids list like this (this is not common, so only add email/password if you can):
 ```json

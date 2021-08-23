@@ -21,7 +21,7 @@ def get_multi_level_value(d, *keys, **kwargs):
             return default
     return d
 
-def create_scrapper_session(retries = 0, backoff_factor = 0.1, status_forcelist = (500, 502, 504, 423, 429)):
+def create_scrapper_session(retries = 10, backoff_factor = 0.1, status_forcelist = (500, 502, 504, 423, 429)):
     session = cloudscraper.create_scraper()
 
     retry = Retry(
