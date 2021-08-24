@@ -1,3 +1,4 @@
-requests
-cloudscraper
-fake-useragent
+requests>=2.25
+urllib3>=1.26
+cloudscraper>=1.2.58
+fake-useragent>=0.1.11
