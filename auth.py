@@ -1,5 +1,5 @@
 import cloudscraper
-from helpers import get_multi_level_value, create_scrapper_session, get_value
+from helpers import get_multi_level_value, create_scrapper_session, get_value, get_random_ddg_cookie
 
 def get_all_sessions(config):
     sessions = {}
@@ -50,8 +50,8 @@ def get_all_sessions(config):
     return sessions
 
 def get_auth_token_seiso(username, password):
-    scraper = create_scrapper_session()
-    response = scraper.post('https://seiso.party/account/login', data = {'username': username, 'password': password})
+    scraper = create_scrapper_session(status_forcelist = (500, 502, 504, 423, 429, 403))
+    response = scraper.post('https://seiso.party/account/login', data = {'username': username, 'password': password}, cookies = {'__ddg2': get_random_ddg_cookie()})
     return response.cookies.get('session')
 
 # def get_auth_token_kemono(username, password):

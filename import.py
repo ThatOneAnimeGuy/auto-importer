@@ -8,7 +8,7 @@ from fake_useragent import UserAgent
 
 ua = UserAgent()
 headers = {
-    'X-Source-Script': 'auto-importer v1.0',
+    'X-Source-Script': 'auto-importer v1.0.1',
     'User-Agent': ua.random
 }
 
